@@ -1,4 +1,4 @@
-[ Fibonacci in Brainfuck ]
+[ Factorial in Brainfuck ]
 
 #1 = 1
 #2 = 1
@@ -11,12 +11,24 @@ prints first
     < -
 ]
 
-> .
-<
+> . < 
 
 +++ +++ ++ [
     > --- ---
     < -
+]
+
+prints whitespace
++++ +++ ++ [
+    >>> +++ +
+    <<< -
+]
+
+>>> . <<< 
+
++++ +++ ++ [
+    >>> --- -
+    <<< -
 ]
 
 prints second
@@ -25,8 +37,7 @@ prints second
     << -
 ]
 
->> .
-<<
+>> . << 
 
 +++ +++ ++ [
     >> --- ---
@@ -57,8 +68,21 @@ calc 4 next numbers
         >> -
     ]
 
-    prints current
+    prints whitespace
     < +++ +++ ++ [
+        > +++ +
+        < -
+    ]
+
+    > . <
+
+    +++ +++ ++ [
+        > --- -
+        < -
+    ]
+
+    prints current
+    +++ +++ ++ [
         < +++ +++
         > -
     ]
