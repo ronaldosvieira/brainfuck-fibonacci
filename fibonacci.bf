@@ -1,4 +1,4 @@
-[ Factorial in Brainfuck ]
+[ Fibonacci in Brainfuck ]
 
 #1 = 1
 #2 = 1
